@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sleeping Barber Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sleeping Barber Shop</h1>
+
+        <div class="status-box">
+            <div class="indicator" id="indicator"></div>
+            <h2 id="status">Barber Status: Sleeping</h2>
+        </div>
+
+        <div class="progress-section">
+            <h3>Haircut Progress</h3>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <button onclick="addCustomer()">Add Customer</button>
+
+        <div class="shop">
+
+            <div class="barber-area">
+                <h3>Barber Chair</h3>
+                <div class="barber-chair" id="barberChair"></div>
+            </div>
+
+            <div class="waiting-area">
+                <h3>Waiting Chairs</h3>
+
+                <div class="chairs">
+                    <div class="chair"></div>
+                    <div class="chair"></div>
+                    <div class="chair"></div>
+                    <div class="chair"></div>
+                    <div class="chair"></div>
+                </div>
+            </div>
+
+            <div class="queue-area">
+                <h3>Customer Queue</h3>
+                <div id="queue"></div>
+            </div>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h4>Total Arrived</h4>
+                <p id="arrived">0</p>
+            </div>
+
+            <div class="stat-box">
+                <h4>Waiting</h4>
+                <p id="waiting">0</p>
+            </div>
+
+            <div class="stat-box">
+                <h4>Served</h4>
+                <p id="served">0</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
